@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "服务";
+}
+@using JundongTech.Models.Service
+@model  IEnumerable<Service>
+@{
+    IEnumerable<Service> servicesList = from items in Model  select items;
+    Service[] ServicesArray = servicesList.ToArray();   
+}
+<div class="some">
+		<h3>服务项目</h3>
+		<div class="container">
+			<div class="serve-grids">
+				<div class="col-md-4 services-section-grid wow bounceIn" data-wow-delay="0.4s">
+					<div class="services-section-grid-head">
+						<div class="service-icon">
+							<i class="rocket"></i>
+						</div>
+						<div class="service-icon-heading">
+							<h4>@ServicesArray[0].service_name</h4>
+							<p>@ServicesArray[0].service_description</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+					<div class="col-md-4 services-section-grid wow bounceIn" data-wow-delay="0.4s">
+					<div class="services-section-grid-head">
+						<div class="service-icon">
+							<i class="plan"></i>
+						</div>
+						<div class="service-icon-heading">
+							<h4>@ServicesArray[1].service_name</h4>
+							<p>@ServicesArray[1].service_description</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+					<div class="col-md-4 services-section-grid lost wow bounceIn" data-wow-delay="0.4s">
+					<div class="services-section-grid-head">
+						<div class="service-icon">
+							<i class="book"></i>
+						</div>
+						<div class="service-icon-heading">
+							<h4>@ServicesArray[2].service_name</h4>
+							<p>@ServicesArray[2].service_description</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+				<div class="serve-grids two">
+				<div class="col-md-4 services-section-grid act wow bounceIn" data-wow-delay="0.4s">
+					<div class="services-section-grid-head">
+						<div class="service-icon">
+							<i class="arrow"></i>
+						</div>
+						<div class="service-icon-heading">
+							<h4>@ServicesArray[3].service_name</h4>
+							<p>@ServicesArray[3].service_description.</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+					<div class="col-md-4 services-section-grid wow bounceIn" data-wow-delay="0.4s">
+					<div class="services-section-grid-head">
+						<div class="service-icon">
+							<i class="download"></i>
+						</div>
+						<div class="service-icon-heading">
+							<h4>@ServicesArray[4].service_name</h4>
+							<p>@ServicesArray[4].service_description</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+					<div class="col-md-4 services-section-grid lost wow bounceIn" data-wow-delay="0.4s">
+					<div class="services-section-grid-head">
+						<div class="service-icon">
+							<i class="cloud"></i>
+						</div>
+						<div class="service-icon-heading">
+							<h4>@ServicesArray[5].service_name</h4>
+							<p>@ServicesArray[5].service_description</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+
+<!--服务理念-->
+		<div class="features-section text-center">
+			<div class="container">
+					<div class="Awesome-features">
+						 <h3>我们秉持着</h3>
+						 <div class="awesome-grids">
+						 	<div class="col-md-4 awesome-grid wow bounceIn" data-wow-delay="0.4s">
+						 		<i class="eye"></i>
+								<h4>Beautiful design</h4>
+								<p>Nullam vitae sollicitudineros. Cras varius vehicula velit, ac congue quam dictum sed</p>
+							</div>
+							<div class="col-md-4 flat-phone text-center span_66 wow bounceIn" data-wow-delay="0.4s">
+								<img src="images/flat-phone.jpg" alt="" />
+							</div>
+
+							<div class="col-md-4 awesome-grid wow bounceIn" data-wow-delay="0.4s">
+						 		<i class="load"></i>
+								<h4>Auto Reloading</h4>
+								<p>Nullam vitae sollicitudineros. Cras varius vehicula velit, ac congue quam dictum sed</p>
+							</div>
+						 	<div class="clearfix"></div>
+						 </div>
+						 <div class="awesome-grids second">
+						 	<div class="col-md-4 awesome-grid wow bounceIn" data-wow-delay="0.4s">
+						 		<i class="msg"></i>
+								<h4>Responsive Layout</h4>
+								<p>Nullam vitae sollicitudineros. Cras varius vehicula velit, ac congue quam dictum sed</p>
+
+							</div>
+							<div class="col-md-4 awesome-grid wow bounceIn" data-wow-delay="0.4s">
+						 		<i class="flag"></i>
+								<h4>Easy to Customize</h4>
+								<p>Nullam vitae sollicitudineros. Cras varius vehicula velit, ac congue quam dictum sed</p>	
+
+							</div>
+							<div class="col-md-4 awesome-grid wow bounceIn" data-wow-delay="0.4s">
+						 		<i class="ok"></i>
+								<h4>Help & Support</h4>
+								<p>Nullam vitae sollicitudineros. Cras varius vehicula velit, ac congue quam dictum sed</p>
+
+							</div>
+						 	<div class="clearfix"></div>
+						 </div>
+					</div>
+			</div>
+		</div>

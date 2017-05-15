@@ -1,0 +1,297 @@
+﻿@{
+    ViewBag.Title = "首页";
+}
+
+@using JundongTech.Models.Service
+@using JundongTech.Models.Stuff
+@using JundongTech.Models.Product
+@using JundongTech.Models.Partner
+
+
+@model JundongTech.Models.Home.HomeViewModel
+
+<!--start-display1-->
+	<div class="slider-bg">
+		<div class="container">
+			<div class="grid-1">
+				<div class="col-md-5 left-grid-1 wow bounceInLeft" data-wow-delay="0.4s">
+					<h1>君东科技</h1>	
+					<h2>有限</h2><h3>责任公司</h3>
+				</div>
+				<div class="col-md-7 right-grid-1 wow bounceInRight" data-wow-delay="0.7s">
+					<div class="slider">
+						<div class="callbacks_container">
+								<ul class="rslides" id="slider">
+                                  @for (int j = 1; j < 4; j++)
+                                  { 
+                                    <li>
+									<img src="@Url.Content("~/Image/Product/slide1.png")"  class="img-responsive" alt="" />
+									</li>  
+                                  }
+								 </ul>
+							</div>
+						</div>
+					</div>	
+				 <script src="@Url.Content("~/Scripts/responsiveslides.min.js")"></script>
+						   <script>
+					    $(function () {
+					      $("#slider").responsiveSlides({
+					      	auto: true,
+					      	nav: true,
+					      	speed: 500,
+					        namespace: "callbacks",
+					        pager: true,
+					      });
+					    });
+					  </script>
+
+                    </div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+<!--end-display-->
+
+<!--start-services-->
+
+		<div id="about" class="service-section">
+			<div class="container">
+				<div class="serve-grids wow bounceIn animated" data-wow-delay="0.4s">
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="rocket"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>@Model.services[0].service_name</h4>
+								<p>@Model.services[0].service_description</p>
+                                <h5>Price:@Model.services[0].service_price</h5>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="plan"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>@Model.services[1].service_name</h4>
+								<p>@Model.services[1].service_description</p>
+                                <h5>Price:@Model.services[1].service_price</h5>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid lost">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="book"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>@Model.services[2].service_name</h4>
+								<p>@Model.services[2].service_description</p>
+                                <h5>Price:@Model.services[2].service_price</h5>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+					<div class="serve-grids two  wow bounceIn animated" data-wow-delay="0.4s">
+					<div class="col-md-4 services-section-grid act">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="arrow"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>@Model.services[3].service_name</h4>
+								<p>@Model.services[3].service_description</p>
+                                <h5>Price:@Model.services[3].service_price</h5>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="download"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>@Model.services[4].service_name</h4>
+								<p>@Model.services[4].service_description</p>
+                                <h5>Price:@Model.services[4].service_price</h5>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="col-md-4 services-section-grid lost">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="cloud"></i>
+							</div>
+							<div class="service-icon-heading">
+                                <h4>@Model.services[5].service_name</h4>
+								<p>@Model.services[5].service_description</p>
+                                <h5>Price:@Model.services[5].service_price</h5>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+<!--end-services-->
+
+<!--start-mid-section-->
+			<div class="container">
+				<div class="mid-section">
+						<div class="mid-top wow fadeInUpBig animated animated" data-wow-delay="0.4s">
+							<div class="col-md-10 mid-text">
+							 <h3>Hi there. I am a theme, with attitude. I am also responsive, easy do edit. Why don't you try me ?</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor  blandit nec Quisque quis nulla vel dolor ultrices sit amet.</p>
+							</div>
+							<div class="col-md-2 mid-button">
+								<a href="@Url.Content("~/Content/Index?subject=ForService")">Order NOW !</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+<!--//end-mid-section-->  
+<!--start-stuff-->
+			<div id="features" class="port-section">
+				<div class="container">
+				<h2>THE Stuff</h2>
+					<div class="port-grids">
+						<div class="col-md-3 port-grid wow zoomInLeft animated">
+							<a href="portfolio.html"><img src="@Url.Content(@Model.stuffs[0].stuff_image)" class="img-responsive" alt="" /></a>
+							<div class="box_type">@Model.stuffs[0].stuff_work</div>
+							<div class="box-hover">
+								<ul class="port-icons">
+								<li><i class="per"></i></li>
+								<li><i class="loca"></i></li>
+								</ul>
+							</div>
+							<div class="text">
+								<a href="portfolio.html"><h3>My Name is @Model.stuffs[0].stuff_name</h3></a>
+								<p>@Model.stuffs[0].stuff_description </p>
+							</div>
+						</div>
+						<div class="col-md-3 port-grid wow zoomInLeft animated" >
+							<a href="portfolio.html"><img src="@Url.Content(@Model.stuffs[1].stuff_image)" class="img-responsive" alt="" /></a>
+							<div class="box_type">@Model.stuffs[1].stuff_work</div>
+							<div class="box-hover">
+								<ul class="port-icons">
+								<li><i class="per"></i></li>
+								<li><i class="loca"></i></li>
+								</ul>
+							</div>
+							<div class="text">
+								<a href="portfolio.html"><h3>I am @Model.stuffs[1].stuff_name</h3></a>
+								<p>@Model.stuffs[1].stuff_description </p>
+							</div>
+						</div>
+						<div class="col-md-3 port-grid wow zoomInRight animated">
+							<a href="portfolio.html"><img src="@Url.Content(@Model.stuffs[2].stuff_image)" class="img-responsive" alt="" /></a>
+							<div class="box_type">@Model.stuffs[2].stuff_work</div>
+							<div class="box-hover">
+								<ul class="port-icons">
+								<li><i class="per"></i></li>
+								<li><i class="loca"></i></li>
+								</ul>
+							</div>
+							<div class="text">
+								<a href="portfolio.html"><h3>I am @Model.stuffs[2].stuff_name</h3></a>
+								<p>@Model.stuffs[2].stuff_description </p>
+							</div>
+						</div>
+						<div class="col-md-3 port-grid lost wow zoomInRight animated">
+							<a href="portfolio.html"><img src="@Url.Content(@Model.stuffs[3].stuff_image)" class="img-responsive" alt="" /></a>
+							<div class="box_type">@Model.stuffs[3].stuff_work</div>
+							<div class="box-hover">
+								<ul class="port-icons">
+								<li><i class="per"></i></li>
+								<li><i class="loca"></i></li>
+								</ul>
+							</div>
+							<div class="text">
+								<a href="portfolio.html"><h3>My name is @Model.stuffs[3].stuff_name</h3></a>
+								<p>@Model.stuffs[3].stuff_description. </p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+<!--end-stuff-->
+<!--start-joinus-->
+			<div class="container">
+				<div class="bottom-section">
+						<div class="bottom-top wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+							<div class="col-md-10 bottom-text">
+								<h3>Subscribe to our newsletter. We hate spam as much as you do, so no worries.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor  blandit nec Quisque quis nulla vel dolor ultrices sit amet.</p>
+							</div>
+							<div class="col-md-2 story"><h4 class="stories"><span><a href="@Url.Content("~/Content/Index?subject=ForJob")"><img src="@Url.Content("~/Image/Home/mail.png")" class="img-responsive" alt="" /></a></span></h4></div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+<!--end-joinus-->
+<!--start-product&&partner-->
+			<div id="blog" class="blog-section">
+				<div class="container">
+				<h3>Our Products</h3>
+					<div class="blog-grids">
+                        <!--start-product_display-->
+						<div class="col-md-8 blog-left">
+                           @for (int i = 0; i < 2; i++)
+                            {
+                                int len = Model.products.ToArray().Length;
+                                Random rn = new Random();
+                                int index1 = rn.Next(0, len);
+                                if (i == 1)
+                                {
+                                    index1=index1+1;
+                                    index1 = index1 % len;
+                                }
+                                <div class="col-md-6 left-img wow bounceInLeft animated" data-wow-delay="0.4s">
+								    <a href="#"><img src="@Url.Content(@Model.products[index1].product_image)" class="img-responsive" alt="" /></a>
+								    <a href="#"><h4>@Model.products[index1].product_name</h4></a>
+								    <p>@Model.products[index1].product_description </p>
+								    <a class="read" href="single.html">Read more <span> </span></a>
+						        </div>
+                            }
+						</div>
+                        <!--start-partner_display-->
+						<div class="col-md-4 testimonal wow bounceInRight animated" data-wow-delay="0.4s">
+								<h3>Our Partner</h3>
+                            <!--start-partber1-->
+							<div class="test-grid">
+                                @for (int i = 0; i < 2; i++)
+                                {
+                                    int len = Model.partners.ToArray().Length;
+                                    Random rn = new Random();
+                                    int index1 = rn.Next(0, len);
+                                    if (i == 1)
+                                    {
+                                        index1 = index1 + 1;
+                                        index1 = index1 % len;
+                                    }
+                                    <div class="col-md-3 test-img">
+								    <img src="@Url.Content(@Model.partners[index1].partner_logo)" class="img-responsive" alt="" />
+								    </div>
+								    <div class="col-md-9 test-text">
+									    <h4>Very pleased with the cool services provided.</h4>
+									    <p> <a href="#">@Model.partners[index1].partner_website</a></p>
+								    </div>
+							        <div class="clearfix"> </div><p class="test"><span> </span>@Model.partners[index1].partner_description </p>
+                                } 
+							</div>
+						<div class="clearfix"> </div>
+					</div>
+					 <div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>

@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "产品";
+}
+
+@using JundongTech.Models.Product
+@model  IEnumerable<Product>
+@{
+    IEnumerable<Product> productsList = from items in Model select items;
+    Product[] ProductsArray = productsList.ToArray();   
+}
+
+<script src="@Url.Content("~/Scripts/jquery.swipebox.min.js")"></script> 
+
+<link rel="stylesheet" href="@Url.Content("~/Content/themes/home/swipebox.css")">
+
+<script type="text/javascript">
+	jQuery(function($) {
+		$(".swipebox").swipebox();
+	});
+</script>
+
+	<div class="container">
+		<div class="gallery">
+		<!-- portfolio -->
+			<div class="portfolio-section" id="portfolio">			
+				<!-- head-section -->
+					<div class="head-section text-center">
+						<h2>Product</h2>
+					</div>
+					<!-- /head-section -->
+					<div id="portfoliolist">			
+		
+                        @for (int i = 0; i < 12; i++)
+                        {
+                            <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						        <div class="portfolio-wrapper grid_box">		
+							        <a href="@Url.Content(@ProductsArray[i].product_path)" title="@ProductsArray[i].product_name" target="_blank"> <img src="@ProductsArray[i].product_image" class="img-responsive" alt="" ><span class="zoom-icon"></span> 
+							        </a>
+		                        </div>
+					        </div>
+                        }
+				        <div class="clearfix"> 
+				        </div>					
+				    </div>			
+			<div class="clearfix"></div>	
+			</div>
+		</div>
+	</div>
+
+
+

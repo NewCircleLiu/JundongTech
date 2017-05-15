@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit"> 
+    <link href='http://fonts.useso.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href ="@Url.Content("~/Content/themes/home/bootstrap.css")">
+    <link href="@Url.Content("~/Content/themes/home/style.css")" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.11.0.min.js")"></script>
+    <script type="application/x-javascript"> 
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); },false); function hideURLbar(){ window.scrollTo(0,1); } 
+    </script>
+    <script src="@Url.Content("~/Scripts/wow.min.js")"></script>
+    <link href="@Url.Content("~/Content/themes/home/animate.css")" rel='stylesheet' type='text/css' />
+    <script>
+        new WOW().init();
+    </script>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/home/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+  <div class="header box css3-shadow" id="head">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			 </div>
+		     <div class="h_menu4"><!-- start h_menu4 -->
+				<a class="toggleMenu" href="#">Menu</a>
+				<ul class="nav">
+					<li class="active"><a class="scroll" href="@Url.Content("~/Home")">Home</a></li>
+					<li><a href="@Url.Content("~/Service")">Service</a></li>
+					<li><a href="@Url.Content("~/Product")">Product</a></li>
+					<li><a href="#features" class="scroll">Our Team</a></li>
+					<li><a href="@Url.Content("~/Contact")">Contact</a></li>
+
+				</ul>
+				<script type="text/javascript" src="js/nav.js"></script>
+			</div><!-- end h_menu4 -->
+			<div class="social_icons wow bounceInRight" data-wow-delay="0.4s">
+					<ul>
+						<li><a href="#">放微信公众号的二维码</a></li>
+						<li><a href="#">新浪微博</a></li>
+					</ul>
+				</div>
+
+			<div class="clearfix"> </div>
+			
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+
+
+    @RenderBody()
+
+
+<div class="footer-section">
+			<div class="container">
+				<div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
+					<div class="col-md-3 footer-grid">
+					<h4>About studeon</h4>
+					<div class="border2"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+						<p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+					</div>
+					<div class="col-md-3 footer-grid tags">
+							<h4>the tags</h4>
+							<div class="border2"></div>
+						<ul class="tag">
+							<li><a href="#">Awesome</a></li>
+							<li><a href="#">Strategy</a></li>
+							<li><a href="#">Photography</a></li>
+							<li><a href="#">Development</a></li>
+							<li><a href="#">Css</a></li>
+							<li><a href="#">photoshop</a></li>
+							<li><a href="#">Html</a></li>
+							<li><a href="#">Awesome</a></li>
+							<li><a href="#">Strategy</a></li>
+							<li><a href="#">Photoshop</a></li>
+							<li><a href="#">Html</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid tweet">
+							<h4>latest tweets</h4>
+							<div class="border2"></div>
+							<div class="icon-3-square">
+									<a href="#"><i class="square-3"></i></a>
+								</div>
+						<div class="icon-text">
+							<p>I like this awesome freebie. Check it out<a href="#"> http://t.co/9vslJFpW </a></p>
+							<h5>About 15 mins</h5>
+						</div>
+							<div class="clearfix"></div>
+							<div class="icon-3-square">
+									<a href="#"><i class="square-3"></i></a>
+							</div>
+							<div class="icon-text">
+								<p>I like this awesome freebie. Check it out<a href="#"> http://t.co/9vslJFpW </a></p>
+								<h5>About 15 mins</h5>
+							</div>
+							<div class="clearfix"></div>
+					</div>
+					<div class="col-md-3 footer-grid flickr">
+							<h4>flickr feed</h4>
+							<div class="border2"></div>
+							<div class="flickr-grids">
+									<div class="flickr-grid">
+										<a href="#"><img src="@Url.Content("~/Image/Partner/f1.png")" alt=" " title="CEO" /></a>
+									</div>
+									<div class="flickr-grid">
+										<a href="#"><img src="@Url.Content("~/Image/Partner/f2.png")" alt=" " title="GM" /></a>
+									</div>
+									<div class="flickr-grid">
+										<a href="#"><img src="@Url.Content("~/Image/Partner/f3.png")" alt=" " title="CEO" /></a>
+									</div>
+									<div class="clearfix"> </div>
+										
+									<div class="flickr-grid">
+										<a href="#"><img src="@Url.Content("~/Image/Partner/f4.png")" alt=" " title="GM" /></a>
+									</div>
+									<div class="flickr-grid">
+										<a href="#"><img src="@Url.Content("~/Image/Partner/f3.png")" alt=" " title="CEO" /></a>
+									</div>
+									<div class="flickr-grid">
+										<a href="#"><img src="@Url.Content("~/Image/Partner/f2.png")" alt=" " title="GM" /></a>
+									</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+		</div>
+	</div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
