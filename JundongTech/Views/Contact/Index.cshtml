@@ -1,6 +1,9 @@
 ﻿@{
     ViewBag.Title = "联系我们";
 }
+@using JundongTech.Models.Contact
+@model Contact
+
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 
 <!--百度地图-->
@@ -170,12 +173,10 @@
 			<form class="wow bounceIn" id="contact_msg" data-wow-delay="0.4s">
 				<input type="text" id="name" name="name" placeholder="Name" required=" ">
 				<input type="text" id="email" name="email" placeholder="Email" required=" ">
-				<input type="text" id="subject" name="subject" placeholder="Subject" required=" ">
+				<input type="text" id="subject" name="subject" placeholder="Subject" required=" " value="@Model.contact_subject">
 				<textarea placeholder="Message" id="message" name="message" required=" "></textarea>
 				<input type="button" onclick="check()" value="SEND MESSAGE">
 			</form>
 		</div>
-		<div class="map">
-			<div id="dituContent" style="width:697px;height:550px;border:#ccc solid 1px;"></div>
-		</div>		
+	
 	</div>

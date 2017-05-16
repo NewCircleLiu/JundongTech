@@ -31,7 +31,9 @@ namespace JundongTech.Controllers
                 return Content("提交成功");
             }
             else
+            {
                 return View();
+            }
         }
     }
 }
