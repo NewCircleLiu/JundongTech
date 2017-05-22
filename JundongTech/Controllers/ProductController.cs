@@ -13,7 +13,6 @@ namespace JundongTech.Controllers
         // GET: /product/
         ProductContext productContext = new ProductContext();
 
-
         public ActionResult Index()
         {
             return View(productContext.productList.ToList());

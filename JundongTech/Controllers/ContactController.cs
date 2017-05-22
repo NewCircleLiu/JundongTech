@@ -7,16 +7,19 @@ using JundongTech.Models.Contact;
 
 namespace JundongTech.Controllers
 {
+
     public class ContactController : Controller
     {
-        //
+
         // GET: /Contact/
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult Index(string test)
+
+         [HttpPost]
+         public ActionResult Index(string test)
         {
             if (Request.IsAjaxRequest())
             {
