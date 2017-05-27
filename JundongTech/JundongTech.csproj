@@ -146,8 +146,11 @@
   <ItemGroup>
     <Content Include="Content\themes\home\animate.css" />
     <Content Include="Content\themes\home\bootstrap.css" />
+    <Content Include="Content\themes\home\flexslider.css" />
     <Content Include="Content\themes\home\images\flat-phone.jpg" />
+    <Content Include="Content\themes\home\pageSwitch.min.css" />
     <Content Include="Content\themes\home\style.css" />
+    <Content Include="Content\themes\home\style2.css" />
     <Content Include="Content\themes\home\swipebox.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -205,6 +208,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\home\style2.css.map" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Content\themes\home\images\avatar.jpg" />
     <Content Include="Content\themes\home\images\bg.jpg" />
@@ -224,13 +228,23 @@
     <Content Include="Content\themes\home\images\ser-bg.png" />
     <Content Include="Content\themes\home\images\tw.png" />
     <Content Include="Content\themes\home\images\windows.png" />
+    <Content Include="Image\Home\logo.png" />
     <Content Include="Image\Home\mail.png" />
     <Content Include="Image\Partner\f1.png" />
     <Content Include="Image\Partner\f2.png" />
     <Content Include="Image\Partner\f3.png" />
     <Content Include="Image\Partner\f4.png" />
+    <Content Include="Image\Product\1.jpg" />
+    <Content Include="Image\Product\2.jpg" />
+    <Content Include="Image\Product\3.jpg" />
+    <Content Include="Image\Product\4.jpg" />
+    <Content Include="Image\Product\5.jpg" />
     <Content Include="Image\Product\b1.jpg" />
     <Content Include="Image\Product\b2.jpg" />
+    <Content Include="Image\Product\img_bg_1.jpg" />
+    <Content Include="Image\Product\img_bg_2.jpg" />
+    <Content Include="Image\Product\img_bg_3.jpg" />
+    <Content Include="Image\Product\img_bg_4.jpg" />
     <Content Include="Image\Product\s1.jpg" />
     <Content Include="Image\Product\s2.jpg" />
     <Content Include="Image\Product\s3.jpg" />
@@ -240,10 +254,12 @@
     <Content Include="Image\Product\slide1.png" />
     <Content Include="Image\Product\slide2.png" />
     <Content Include="Image\Product\slide3.png" />
+    <Content Include="Image\Product\timg.jpg" />
     <Content Include="Image\Stuff\p1.jpg" />
     <Content Include="Image\Stuff\p2.jpg" />
     <Content Include="Image\Stuff\p3.jpg" />
     <Content Include="Image\Stuff\p4.jpg" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\easing.js" />
     <Content Include="Scripts\jquery-1.11.0.min.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
@@ -251,6 +267,7 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.flexslider-min.js" />
     <Content Include="Scripts\jquery.mixitup.min.js" />
     <Content Include="Scripts\jquery.swipebox.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
@@ -261,9 +278,12 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\move-top.js" />
     <Content Include="Scripts\nav.js" />
+    <Content Include="Scripts\pageSwitch.js" />
+    <Content Include="Scripts\pageSwitch.min.js" />
     <Content Include="Scripts\responsiveslides.min.js" />
     <Content Include="Scripts\wow.min.js" />
     <Content Include="Scripts\_references.js" />

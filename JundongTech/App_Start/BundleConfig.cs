@@ -22,7 +22,7 @@ namespace JundongTech
             // 生产准备时，请使用 http://modernizr.com 上的生成工具来仅选择所需的测试。
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
-            bundles.Add(new StyleBundle("~/Content/themes/home/css").Include("~/Content/themes/home/style.css", "~/Content/themes/home/bootsrap.css", "~/Content/themes/home/swipebox.css", "~/Content/themes/home/animate.css"));
+            bundles.Add(new StyleBundle("~/Content/themes/home/css").Include("~/Content/themes/home/style.css", "~/Content/themes/home/bootsrap.css", "~/Content/themes/home/swipebox.css", "~/Content/themes/home/animate.css", "~/Content/themes/home/style2.css", "~/Content/themes/home/pageSwitch.min.css"));
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",

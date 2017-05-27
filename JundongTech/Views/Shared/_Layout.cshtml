@@ -11,14 +11,20 @@
     <link rel="stylesheet" href ="@Url.Content("~/Content/themes/home/bootstrap.css")">
     <link href="@Url.Content("~/Content/themes/home/style.css")" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.11.0.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/pageSwitch.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
     <script type="application/x-javascript"> 
         addEventListener("load", function() { setTimeout(hideURLbar, 0); },false); function hideURLbar(){ window.scrollTo(0,1); } 
     </script>
     <script src="@Url.Content("~/Scripts/wow.min.js")"></script>
     <link href="@Url.Content("~/Content/themes/home/animate.css")" rel='stylesheet' type='text/css' />
+    <link href="@Url.Content("~/Content/themes/home/flexslider.css")" rel='stylesheet' type='text/css'/>
+    <link href="@Url.Content("~/Content/themes/home/style2.css")" rel='stylesheet' type='text/css'/>
+    <link href="@Url.Content("~/Content/themes/home/pageSwitch.min.css")" rel='stylesheet' type='text/css'/>
     <script>
         new WOW().init();
     </script>
+
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/themes/home/css")
     @Scripts.Render("~/bundles/jquery")
@@ -30,18 +36,18 @@
  	<div class="container">
 	  <div class="header-top">
 	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				<a href="index.html"><img src="/Image/Home/logo.png" alt="" style="max-height:180px ; max-width:180px"/></a>
 			 </div>
 		     <div class="h_menu4"><!-- start h_menu4 -->
 				<a class="toggleMenu" href="#">Menu</a>
 				<ul class="nav">
-					<li class="active"><a href="@Url.Content("~/Home")">Home</a></li>
-					<li><a href="@Url.Content("~/Service")">Service</a></li>
-					<li><a href="@Url.Content("~/Product")">Product</a></li>
-					<li><a href="@Url.Content("~/Home#features")">Our Team</a></li>
-                    <li><a href="@Url.Content("~/Home#blog")">Partner</a></li>
-					<li><a href="@Url.Content("~/Contact")">Contact</a></li>
-
+					<li class="active"><a href="@Url.Content("~/Home")">首页</a></li>
+					<li><a href="@Url.Content("~/Service")">服务简介</a></li>
+					<li><a href="@Url.Content("~/Product")">成品展示</a></li>
+					<li><a href="@Url.Content("~/Home#features")">研发团队</a></li>
+                    <li><a href="@Url.Content("~/Home#blog")">合作伙伴</a></li>
+					<li><a href="@Url.Content("~/Contact")">联系我们</a></li>
+                    <li><a href="@Url.Content("~/AboutUs")">关于我们</a></li>
 				</ul>
 				<script type="text/javascript" src="js/nav.js"></script>
 			</div><!-- end h_menu4 -->
