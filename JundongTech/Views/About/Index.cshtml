@@ -1,18 +1,14 @@
 ﻿@{
     ViewBag.Title = "关于我们";
 }
-
 @using JundongTech.Models.Service
-
 @model  IEnumerable<Service>
-
 @{
     IEnumerable<Service> serviceList = from items in Model select items;
     Service[] ServicesArray = serviceList.ToArray();   
 }
 
 <link href="/Content/themes/home/font-awesome.css" rel="stylesheet">
-
 <!--header CSS-->
 <style>
     #headerwrap {
@@ -158,9 +154,9 @@
 <!--header-->
 <div id="headerwrap" name="home" style="background:url(/Image/AboutUs/header_bg2.jpg)">
   <header class="clearfix">
-    <h1>卓越, 专业, 创新.</h1>
+    <h1 class="wow bounceInRight" data-wow-delay="0.4s">卓越, 专业, 创新.</h1>
      
-    <p style="margin-top:20px">想你所想<br>
+    <p style="margin-top:80px" class="wow bounceInLeft" data-wow-delay="0.4s">想你所想<br>
       做你所做</p>
     <a href="@Url.Content("~/Product")" class="smoothScroll btn btn-lg">More</a> </header>
 </div>
@@ -172,10 +168,10 @@
     <div class="row white">
       <div class="col-md-6"> <img class="img-responsive" src="/Image/AboutUs/about1.jpg" align=""> </div>
       <div class="col-md-6">
-        <h3 style="margin-top:20px;margin-bottom:10px">关于我们</h3>
-        <p>青海君东科技有限公司成立于2016年，是一家集软件定制，市场调研为一体的软件外包科技有限公司。公司自自成立就秉持着“精益求精、诚信服务”的原则，在金融、互联网、教育、政府、汽车等领域有着丰富的软件开发经验。青海省君东科技拥有着最专业的团队，以最诚挚的热情服务于大众，开发符合您业务目标和商业价值的软件</p>
-        <h3 style="margin-top:60px;margin-bottom:10px">为什么选择我们?</h3>
-        <p style="margin-top:10px"> <i class="fa fa-gift fa-2x"></i>
+        <h3 style="margin-top:20px;margin-bottom:10px" class="wow bounceInRight" data-wow-delay="0.4s" >关于我们</h3>
+        <p style="margin-top:20px">青海君东科技有限公司成立于2016年，是一家集软件定制，市场调研为一体的软件外包科技有限公司。公司自自成立就秉持着“精益求精、诚信服务”的原则，在金融、互联网、教育、政府、汽车等领域有着丰富的软件开发经验。青海省君东科技拥有着最专业的团队，以最诚挚的热情服务于大众，开发符合您业务目标和商业价值的软件</p>
+        <h3 style="margin-top:60px;margin-bottom:10px" class="wow bounceInLeft" data-wow-delay="0.4s">为什么选择我们?</h3>
+        <p style="margin-top:20px"> <i class="fa fa-gift fa-2x"></i>
             高品质的服务 / 稳健的技术 / 丰富的开发经验 / 
         </p>
         <p style="margin-top:20px">
@@ -190,13 +186,13 @@
 
 <!--Services-->
 
-<div id="services" name="services" style="background:url(/Image/AboutUs/bg2.jpg)">
+<div id="services" name="services" style="background:url(/Image/AboutUs/bg2.jpg)" class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
   <div class="container">
     <div class="row">
       <h2 class="centered">王牌服务</h2>
       <hr>
       <div class="col-lg-8 col-lg-offset-2">
-        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <p class="large"></p>
       </div>
 
       <div class="col-lg-3 callout"> <i class="eye"></i>
@@ -227,7 +223,7 @@
 <div id="About_Contact" name="contact">
   <div class="container">
     <div class="row">
-      <h2 class="centered">联系我们</h2>  
+      <h2 class="centered" >联系我们</h2>  
       <hr>
       <div class="col-md-4 centered"> <i class="fa fa-map-marker fa-2x"></i>
         <p>青海省西宁市城北区<br>
@@ -242,7 +238,7 @@
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <h3 style="margin-top:10px">
+        <h3 style="margin-top:10px" class="wow bounceInRight" data-wow-delay="0.4s">
             我们的<span style="color:#329cad">目标</span>是：成为业内一流互联网企业
         </h3>
         <!-- form --> 
