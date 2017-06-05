@@ -13,6 +13,6 @@ namespace JundongTech.Models.Service
         public int service_id { get; set; }
         public string service_name { get; set; }
         public string service_description { get; set; }
-        public int service_price { get; set; }
+        public string service_price { get; set; }
     }
 }

@@ -1,0 +1,253 @@
+﻿@{
+    ViewBag.Title = "关于我们";
+}
+
+@using JundongTech.Models.Service
+
+@model  IEnumerable<Service>
+
+@{
+    IEnumerable<Service> serviceList = from items in Model select items;
+    Service[] ServicesArray = serviceList.ToArray();   
+}
+
+<link href="/Content/themes/home/font-awesome.css" rel="stylesheet">
+
+<!--header CSS-->
+<style>
+    #headerwrap {
+	background: no-repeat center top;
+	padding-top: 200px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+	margin-top: 0;
+}
+#headerwrap h1 {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	padding-bottom: 10px;
+}
+#headerwrap p {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 1px;
+}
+#headerwrap .btn {
+	font-weight: 500;
+	font-size: 17px;
+	margin: 20px 0;
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+	border: 1px solid #fff;
+}
+#headerwrap .btn:hover, #headerwrap .btn:focus {
+	color: #555;
+	background-color: #fff;
+	outline: 0px;
+	border: 1px solid #fff;
+}
+</style>
+
+<!--2nd CSS-->
+<style>
+
+    #about {
+	background: #fff;
+	padding-top: 80px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 60px;
+  }
+    #about img {
+	    margin-top: 0;
+    }
+</style>
+
+<!--Services CSS-->
+<style>
+
+    #services {
+	background: no-repeat center center fixed;
+	padding: 60px 0;
+	text-align: center;
+	background-size: cover;
+}
+#services .fa {
+	color: #c0ed5d;
+}
+#services hr {
+	display: block;
+	height: 3px;
+	border: 0;
+	margin: 3em 0;
+	padding: 0;
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	width: 50%;
+	left: 25%;
+	position: relative;
+	border: none;
+}
+#services p {
+	text-align: center;
+	color: #fff;
+    margin-bottom:20px;
+}
+#services H2 {
+	color: #fff;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+#services H3 {
+	color: #fff;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+</style>
+<style>
+
+    #About_Contact {
+	    background: #fff;
+	    padding: 60px 0;
+	    text-align: center;
+    }
+    #About_Contact .form {
+	    padding: 30px 0;
+    }
+    #About_Contact .fa {
+	    color: #3ab7cb;
+	    margin-bottom: 10px;
+    }
+    .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+    #About_Contact .btn {
+	    font-weight: 500;
+	    font-size: 18px;
+	    margin-top: 50px;
+	    background-color: #3ab7cb;
+	    color: #fff;
+	    border: 0;
+    }
+    #About_Contact .btn:hover, #About_Contact .btn:focus {
+	    background-color: #329cad;
+	    outline: 0px;
+    }
+
+</style>
+
+
+
+<!--header-->
+<div id="headerwrap" name="home" style="background:url(/Image/AboutUs/header_bg2.jpg)">
+  <header class="clearfix">
+    <h1>卓越, 专业, 创新.</h1>
+     
+    <p style="margin-top:20px">想你所想<br>
+      做你所做</p>
+    <a href="@Url.Content("~/Product")" class="smoothScroll btn btn-lg">More</a> </header>
+</div>
+
+<!--AboutUs-->
+
+<div id="about" name="about" >
+  <div class="container">
+    <div class="row white">
+      <div class="col-md-6"> <img class="img-responsive" src="/Image/AboutUs/about1.jpg" align=""> </div>
+      <div class="col-md-6">
+        <h3 style="margin-top:20px;margin-bottom:10px">关于我们</h3>
+        <p>青海君东科技有限公司成立于2016年，是一家集软件定制，市场调研为一体的软件外包科技有限公司。公司自自成立就秉持着“精益求精、诚信服务”的原则，在金融、互联网、教育、政府、汽车等领域有着丰富的软件开发经验。青海省君东科技拥有着最专业的团队，以最诚挚的热情服务于大众，开发符合您业务目标和商业价值的软件</p>
+        <h3 style="margin-top:60px;margin-bottom:10px">为什么选择我们?</h3>
+        <p style="margin-top:10px"> <i class="fa fa-gift fa-2x"></i>
+            高品质的服务 / 稳健的技术 / 丰富的开发经验 / 
+        </p>
+        <p style="margin-top:20px">
+            <i class="fa fa-fire fa-2x"></i>
+            令人惊叹的创造力 / 永恒的热情 / 可靠的IT产品 / 
+        </p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+
+<!--Services-->
+
+<div id="services" name="services" style="background:url(/Image/AboutUs/bg2.jpg)">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">王牌服务</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2">
+        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+      </div>
+
+      <div class="col-lg-3 callout"> <i class="eye"></i>
+         <h3>@ServicesArray[0].service_name</h3>
+         <p>@ServicesArray[0].service_description</p>
+      </div>
+
+      <div class="col-lg-3 callout"> <i class="load"></i>
+          <h3>@ServicesArray[1].service_name</h3>
+        <p>@ServicesArray[1].service_description</p>
+      </div>
+      <div class="col-lg-3 callout"> <i class="msg"></i>
+        <h3>@ServicesArray[2].service_name</h3>
+        <p>@ServicesArray[2].service_description</p>
+      </div>
+      <div class="col-lg-3 callout"> <i class="ok"></i>
+        <h3>@ServicesArray[3].service_name</h3>
+        <p>@ServicesArray[3].service_description</p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+
+
+<!--Contact-->
+
+<div id="About_Contact" name="contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">联系我们</h2>  
+      <hr>
+      <div class="col-md-4 centered"> <i class="fa fa-map-marker fa-2x"></i>
+        <p>青海省西宁市城北区<br>
+          创新孵化基地</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>我们的邮箱啦啦啦啦啦</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p> 我们的电话啦啦啦啦</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <h3 style="margin-top:10px">
+            我们的<span style="color:#329cad">目标</span>是：成为业内一流互联网企业
+        </h3>
+        <!-- form --> 
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>

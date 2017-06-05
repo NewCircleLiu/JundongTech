@@ -122,6 +122,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -147,10 +148,12 @@
     <Content Include="Content\themes\home\animate.css" />
     <Content Include="Content\themes\home\bootstrap.css" />
     <Content Include="Content\themes\home\flexslider.css" />
+    <Content Include="Content\themes\home\font-awesome.css" />
     <Content Include="Content\themes\home\images\flat-phone.jpg" />
+    <Content Include="Content\themes\home\images\fontawesome-webfont.svg" />
+    <Content Include="Content\themes\home\landing-page.css" />
     <Content Include="Content\themes\home\pageSwitch.min.css" />
     <Content Include="Content\themes\home\style.css" />
-    <Content Include="Content\themes\home\style2.css" />
     <Content Include="Content\themes\home\swipebox.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -208,7 +211,10 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\themes\home\style2.css.map" />
+    <Content Include="Content\themes\home\images\fontawesome-webfont.eot" />
+    <Content Include="Content\themes\home\images\fontawesome-webfont.ttf" />
+    <Content Include="Content\themes\home\images\fontawesome-webfont.woff" />
+    <Content Include="Content\themes\home\images\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Content\themes\home\images\avatar.jpg" />
     <Content Include="Content\themes\home\images\bg.jpg" />
@@ -228,7 +234,17 @@
     <Content Include="Content\themes\home\images\ser-bg.png" />
     <Content Include="Content\themes\home\images\tw.png" />
     <Content Include="Content\themes\home\images\windows.png" />
+    <Content Include="Image\AboutUs\about1.jpg" />
+    <Content Include="Image\AboutUs\bg.jpg" />
+    <Content Include="Image\AboutUs\bg2.jpg" />
+    <Content Include="Image\AboutUs\bg3.jpg" />
+    <Content Include="Image\AboutUs\header_bg.jpg" />
+    <Content Include="Image\AboutUs\header_bg2.jpg" />
+    <Content Include="Image\AboutUs\iphone3.png" />
+    <Content Include="Image\AboutUs\mac.png" />
+    <Content Include="Image\AboutUs\map.jpg" />
     <Content Include="Image\Home\logo.png" />
+    <Content Include="Image\Home\logo_2.png" />
     <Content Include="Image\Home\mail.png" />
     <Content Include="Image\Partner\f1.png" />
     <Content Include="Image\Partner\f2.png" />
@@ -259,6 +275,7 @@
     <Content Include="Image\Stuff\p2.jpg" />
     <Content Include="Image\Stuff\p3.jpg" />
     <Content Include="Image\Stuff\p4.jpg" />
+    <Content Include="Scripts\awesome-landing-page.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\easing.js" />
     <Content Include="Scripts\jquery-1.11.0.min.js" />
@@ -305,6 +322,7 @@
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Stuff\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

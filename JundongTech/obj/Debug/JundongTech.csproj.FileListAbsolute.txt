@@ -27,6 +27,6 @@ C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\bin\
 C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\bin\zh-Hans\System.Web.WebPages.resources.dll
 C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\obj\Debug\JundongTech.csprojResolveAssemblyReference.cache
 C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\obj\Debug\JundongTech.dll
 C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\obj\Debug\JundongTech.pdb
+C:\Users\IMAC\documents\visual studio 2012\Projects\JundongTech\JundongTech\obj\Debug\JundongTech.csprojResolveAssemblyReference.cache

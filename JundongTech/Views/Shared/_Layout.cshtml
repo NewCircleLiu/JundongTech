@@ -36,7 +36,7 @@
  	<div class="container">
 	  <div class="header-top">
 	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
-				<a href="index.html"><img src="/Image/Home/logo.png" alt="" style="max-height:180px ; max-width:180px"/></a>
+				<a href="@Url.Content("~/Home")"><img src="/Image/Home/logo_2.png" alt="" style="max-height:100px ; max-width:100px ; "/></a>
 			 </div>
 		     <div class="h_menu4"><!-- start h_menu4 -->
 				<a class="toggleMenu" href="#">Menu</a>
@@ -44,10 +44,10 @@
 					<li class="active"><a href="@Url.Content("~/Home")">首页</a></li>
 					<li><a href="@Url.Content("~/Service")">服务简介</a></li>
 					<li><a href="@Url.Content("~/Product")">成品展示</a></li>
-					<li><a href="@Url.Content("~/Home#features")">研发团队</a></li>
-                    <li><a href="@Url.Content("~/Home#blog")">合作伙伴</a></li>
+				<!--    <li><a href="@Url.Content("~/Home#features")" class="scroll">研发团队</a></li>
+                    <li><a href="@Url.Content("~/Home#blog")" class="scroll">合作伙伴</a></li>-->
 					<li><a href="@Url.Content("~/Contact")">联系我们</a></li>
-                    <li><a href="@Url.Content("~/AboutUs")">关于我们</a></li>
+                    <li><a href="@Url.Content("~/About")">关于我们</a></li>
 				</ul>
 				<script type="text/javascript" src="js/nav.js"></script>
 			</div><!-- end h_menu4 -->
@@ -72,50 +72,51 @@
 			<div class="container">
 				<div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
 					<div class="col-md-3 footer-grid">
-					<h4>About studeon</h4>
+					<h4>关于我们</h4>
 					<div class="border2"></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
-						<p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+						<p><a href="@Url.Content("~/AboutUs")" style="color:whitesmoke">关于我们</a></p>
+						<p><a href="@Url.Content("~/Service")" style="color:whitesmoke">服务范围</a></p>
+                        <p><a href="@Url.Content("~/Product")" style="color:whitesmoke">产品展示</a></p>
+                        <p><a href="@Url.Content("~/Contact")" style="color:whitesmoke">联系我们</a></p>
 					</div>
 					<div class="col-md-3 footer-grid tags">
-							<h4>Our tags</h4>
+							<h4>服务范围</h4>
 							<div class="border2"></div>
 						<ul class="tag">
-							<li><a href="#">Awesome</a></li>
-							<li><a href="#">Strategy</a></li>
-							<li><a href="#">Photography</a></li>
-							<li><a href="#">Development</a></li>
-							<li><a href="#">Css</a></li>
-							<li><a href="#">photoshop</a></li>
-							<li><a href="#">Html</a></li>
-							<li><a href="#">Awesome</a></li>
-							<li><a href="#">Strategy</a></li>
-							<li><a href="#">Photoshop</a></li>
-							<li><a href="#">Html</a></li>
+							<li><a href="#">ASP.NET</a></li>
+							<li><a href="#">Android</a></li>
+							<li><a href="#">PHP</a></li>
+							<li><a href="#">ios</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">HTML5</a></li>
+							<li><a href="#">Python</a></li>
+                            <li><a href="#">Photoshop</a></li>
+							<li><a href="#">UI</a></li>
+							<li><a href="#">WEB</a></li>
+                            <li><a href="#">C#</a></li>
+                            <li><a href="#">Java</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid tweet">
-							<h4>latest tweets</h4>
+							<h4>最新动态</h4>
 							<div class="border2"></div>
 							<div class="icon-3-square">
 									<a href="#"><i class="square-3"></i></a>
 								</div>
 						<div class="icon-text">
-							<p>I like this awesome freebie. Check it out<a href="#"> http://t.co/9vslJFpW </a></p>
-							<h5>About 15 mins</h5>
+							<p>君东科技有限责任公司官网上线了！！<a href="#"> 假装有地址 </a></p>
 						</div>
 							<div class="clearfix"></div>
 							<div class="icon-3-square">
 									<a href="#"><i class="square-3"></i></a>
 							</div>
 							<div class="icon-text">
-								<p>I like this awesome freebie. Check it out<a href="#"> http://t.co/9vslJFpW </a></p>
-								<h5>About 15 mins</h5>
+								<p>君东科技有限责任公司官网上线了！！<a href="#"> 会有地址的 </a></p>
 							</div>
 							<div class="clearfix"></div>
 					</div>
 					<div class="col-md-3 footer-grid flickr">
-							<h4>flickr feed</h4>
+							<h4>合作伙伴</h4>
 							<div class="border2"></div>
 							<div class="flickr-grids">
 									<div class="flickr-grid">
@@ -147,7 +148,7 @@
 	</div>
     <div class="copyright">
 		<div class="container">
-		<div class="logo2  wow bounceInLeft" data-wow-delay="0.4s"><a href="index.html"><img src="images/logo2.png" alt=""/ title="logo" /></a></div>
+		<div class="logo2  wow bounceInLeft" data-wow-delay="0.4s"><a href="index.html">我感觉这里放一个微信公众号吧</a></div>
 		<p class="write  wow bounceInRight" data-wow-delay="0.4s">Copyright &copy; 青海君东科技有限责任公司&nbsp; 版权所有&nbsp;地址: 青海省西宁市城北区创业孵化基地</p>
 		</div>
 		<div class="clearfix"></div>
